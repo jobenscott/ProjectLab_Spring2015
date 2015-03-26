@@ -1,12 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
-  get 'users/index'
-
-  get 'users/profile'
-
-  get 'users/show'
-
   root 'static_pages#home'
+
+  devise_for :users, :controllers => { registrations: 'registrations' }
+  resources :users, only: [:show, :index]
+  get 'profile' => 'users#profile'
 
   get '/about', to: 'static_pages#about', as: :about
   get '/contact', to: 'static_pages#contact', as: :contact
