@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'users/index'
+
+  get 'users/profile'
+
+  get 'users/show'
+
   root 'static_pages#home'
 
   get '/about', to: 'static_pages#about', as: :about
