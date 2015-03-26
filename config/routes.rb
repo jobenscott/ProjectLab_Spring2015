@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
-  get 'tasks/index'
+  # get 'tasks/index'
 
-  get 'tasks/show'
+  # get 'tasks/show'
 
-  get 'tasks/new'
+  # get 'tasks/new'
 
-  get 'tasks/create'
+  # get 'tasks/create'
 
-  get 'tasks/edit'
+  # get 'tasks/edit'
 
-  get 'tasks/update'
+  # get 'tasks/update'
 
-  get 'tasks/destroy'
+  # get 'tasks/destroy'
 
   root 'static_pages#home'
 
